@@ -6,7 +6,7 @@ public class GuiMain {
     Gui foo = new Gui();   
     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.getContentPane().add(foo.panel);
-    frame.setSize(250,350); 
+    frame.setSize(300,400); 
     frame.setVisible(true);
   }
 }//end class
