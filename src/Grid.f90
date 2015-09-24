@@ -87,7 +87,6 @@ MODULE Grid
     SUBROUTINE GRID_INITIALIZE()
       IMPLICIT NONE
       
-      REAL(dp) :: Test;
       OPEN(UNIT=1, FILE="grid.txt", FORM="FORMATTED", &
             ACTION="READ");
 

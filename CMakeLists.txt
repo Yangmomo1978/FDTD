@@ -9,7 +9,8 @@ set(MY_SOURCES main.f90 src/FDTD_Constants.f90 src/FDTD.f90
 set(BIN ${CMAKE_SOURCE_DIR}/bin)
 
 set(CMAKE_Fortran_MODULE_DIRECTORY ${BIN})
-
 set(CMAKE_EXE_LINKER_FLAGS)# "-static")
-add_executable(FDTD ${MY_SOURCES})
 
+set(CMAKE_Fortran_FLAGS_DEBUG "-g -Wall -fbounds-check")
+add_executable(FDTD ${MY_SOURCES})
+set(CMAKE_BUILD_TYPE Debug)

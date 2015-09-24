@@ -6,11 +6,14 @@ PROGRAM Main
   USE CPML 
   IMPLICIT NONE
 
-  INTEGER :: t;
-
+  INTEGER :: t, dummy_t, FrameSkip;
+  CHARACTER(LEN=3) :: CharToInt;
   CALL GRID_Initialize();
   CALL CPML_Initialize();
   CALL TFSF_Initialize(); 
+  
+  dummy_t = 100;
+  FrameSkip = TotalTime / 100;
 
   DO t = 1, TotalTime
     !==========
@@ -42,13 +45,20 @@ PROGRAM Main
     CALL TFSF_UpdateEinc();
     ELSE
       Ez(SizeX/2,SizeY/2) = Ez(SizeX/2,SizeY/2) + Source(t)
+    END IF
+    
+    IF(MOD(t,FrameSkip) .EQ. 0) THEN
+      WRITE(CharToInt,"(I3)"),dummy_t
+      CALL PrintEz(CharToInt);
+      dummy_t = dummy_t + 1;
     END IF 
   END DO
-    
-  CALL PrintEz();
-  
+ 
   CALL TFSF_Finalize();
   CALL CPML_Finalize(); 
   CALL GRID_Finalize();
   
 END PROGRAM Main
+
+
+

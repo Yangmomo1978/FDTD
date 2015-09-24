@@ -86,7 +86,7 @@ MODULE FDTD
       IMPLICIT NONE
       INTEGER :: i, j;
 
-      j = TFSF_y0;
+      j = TFSF_y0; 
       DO i = TFSF_x0, TFSF_x1
         Hx(i,j-1) = Hx(i,j-1) + Chxe(i,j-1) * EzInc(i,j);
       END DO
