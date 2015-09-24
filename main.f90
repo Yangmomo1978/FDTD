@@ -19,20 +19,30 @@ PROGRAM Main
     CALL UpdateH();
     CALL CPML_UpdateHx();
     CALL CPML_UpdateHy();
-    CALL TFSF_Hupdate();
+
+    IF(SRC_TYPE .EQ. 0) THEN
+      CALL TFSF_Hupdate();
+    END IF
 
     CALL UpdateE();
-    CALL TFSF_Eupdate();
+    
+    IF(SRC_TYPE .EQ. 0) THEN
+      CALL TFSF_Eupdate();
+    END IF
+
     CALL CPML_UpdateEz(); 
 
     !==========
     ! 1-D Grid
     !==========
+    IF(SRC_TYPE .EQ. 0) THEN
     CALL TFSF_Inc();
     Einc0(-2) = Einc0(-2) + Source(t);
     CALL TFSF_UpdateHinc();
     CALL TFSF_UpdateEinc();
- 
+    ELSE
+      Ez(SizeX/2,SizeY/2) = Ez(SizeX/2,SizeY/2) + Source(t)
+    END IF 
   END DO
     
   CALL PrintEz();

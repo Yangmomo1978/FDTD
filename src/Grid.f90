@@ -21,7 +21,6 @@ MODULE Grid
   !======================
   ! PUBLIC variables
   !======================
-  
   !********************
   ! Grid Constants
   !********************
@@ -57,6 +56,12 @@ MODULE Grid
   REAL(dp)   :: sinphi;
   
   !*******************
+  ! SOURCE TYPE
+  !*******************
+  INTEGER :: SRC_GAUSS;
+  INTEGER :: SRC_TYPE;
+
+  !*******************
   !  Arrays
   !*******************
 
@@ -82,33 +87,41 @@ MODULE Grid
     SUBROUTINE GRID_INITIALIZE()
       IMPLICIT NONE
       
+      REAL(dp) :: Test;
+      OPEN(UNIT=1, FILE="grid.txt", FORM="FORMATTED", &
+            ACTION="READ");
+
+      READ(UNIT=1, FMT=*) SizeX;
+      READ(UNIT=1, FMT=*) SizeY;
+      
+      READ(UNIT=1, FMT=*) freq;
+      READ(UNIT=1, FMT=*) Nlambda;
+      READ(UNIT=1, FMT=*) TotalTime;
+      READ(UNIT=1, FMT=*) TFSF_x0;
+      READ(UNIT=1, FMT=*) TFSF_x1;
+      READ(UNIT=1, FMT=*) TFSF_y0;
+      READ(UNIT=1, FMT=*) TFSF_y1;
+      READ(UNIT=1, FMT=*) phi;
+      READ(UNIT=1, FMT=*) SRC_TYPE;
+      READ(UNIT=1, FMT=*) SRC_GAUSS;
+
+      TFSF_Size = TFSF_x1;     
+           
       !******************
       ! Grid Parameters
       !******************
-      freq    = 1 * (10**9.d0); !1 GHz
-      Nlambda = 50;
+      freq    = freq * (10**9.d0); !1 GHz
       dx      = (cc / freq) / Nlambda;
       dy      = dx;
       dt      = dx * 0.99d0 / (DSQRT(2.d0) * cc);
-
-      TotalTime = 2000;
       
       !******************
       ! CPML, TF/SF Size
       !******************
-      TFSF_Size = 5 * Nlambda;
-      PML_Size  = 11;
+      TFSF_x1 = TFSF_x0 + TFSF_x1;
+      TFSF_y1 = TFSF_y0 + TFSF_y1;
 
-      SizeX = Nlambda + TFSF_Size + 2*PML_Size;
-      SizeY = SizeX;
-    
-      TFSF_x0 = Nlambda/2;
-      TFSF_x1 = TFSF_x0 + TFSF_Size;
-
-      TFSF_y0 = TFSF_x0;
-      TFSF_y1 = TFSF_x1;
-
-      phi = pi / 4;
+      phi = phi * pi / 180;
       cosphi = DCOS(phi);
       sinphi = DSIN(phi);
 
@@ -145,7 +158,9 @@ MODULE Grid
       den_hx(:) = 1.d0; 
       den_ex(:) = 1.d0; 
       den_ey(:) = 1.d0; 
-  
+ 
+    CLOSE(UNIT=1); 
+ 
     END SUBROUTINE
     
     SUBROUTINE GRID_FINALIZE()

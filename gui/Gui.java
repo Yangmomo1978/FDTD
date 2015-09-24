@@ -230,7 +230,7 @@ public class Gui extends JFrame implements ActionListener{
      
     try{
 
-      FileWriter writer = new FileWriter("grid.txt");
+      FileWriter writer = new FileWriter("../grid.txt");
       writer.write(SizeX);
       writer.write("\r\n");
       writer.write(SizeY);

@@ -143,8 +143,18 @@ MODULE FDTD
     !! \param time
     FUNCTION Source(n)
       REAL(dp) :: Source
+      REAL(dp) :: t0;
+      REAL(dp) :: tw;
       INTEGER, INTENT(IN) :: n 
-      Source = 20.d0 * DSIN(2.d0 * pi * freq * dt * n);   
+      
+      IF(SRC_GAUSS .EQ. 0) THEN
+        Source = 20.d0 * DSIN(2.d0 * pi * freq * dt * n);   
+      ELSE
+        tw = 0.5 / freq;
+        t0 = 4.0 * tw;
+        Source = -2.d0 * (( n * dt - t0) / tw) * &
+                 DEXP(-((n * dt - t0) / tw) * ((n * dt - t0) / tw));
+      END IF
     END FUNCTION 
 
 END MODULE FDTD
