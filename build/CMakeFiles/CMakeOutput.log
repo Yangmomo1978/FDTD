@@ -1,6 +1,6 @@
-The system is: Linux - 4.1.6-1-ARCH - x86_64
+The system is: Windows - 6.2 - x86
 Compiling the Fortran compiler identification source file "CMakeFortranCompilerId.F" succeeded.
-Compiler: /usr/bin/f95 
+Compiler: C:/MinGW/bin/gfortran.exe 
 Build flags: 
 Id flags: 
 
@@ -8,153 +8,171 @@ The output was:
 0
 
 
-Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.out"
+Compilation of the Fortran compiler identification source "CMakeFortranCompilerId.F" produced "a.exe"
 
-The Fortran compiler identification is GNU, found in "/home/cfadden/Github/FDTD/build/CMakeFiles/3.3.2/CompilerIdFortran/a.out"
+The Fortran compiler identification is GNU, found in "C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/2.8.10.1/CompilerIdFortran/a.exe"
 
 Determining if the Fortran compiler works passed with the following output:
-Change Dir: /home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_8ad63/fast"
-/usr/bin/make -f CMakeFiles/cmTC_8ad63.dir/build.make CMakeFiles/cmTC_8ad63.dir/build
-make[1]: Entering directory '/home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp'
-Building Fortran object CMakeFiles/cmTC_8ad63.dir/testFortranCompiler.f.o
-/usr/bin/f95    -c /home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp/testFortranCompiler.f -o CMakeFiles/cmTC_8ad63.dir/testFortranCompiler.f.o
-Linking Fortran executable cmTC_8ad63
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ad63.dir/link.txt --verbose=1
-/usr/bin/f95       CMakeFiles/cmTC_8ad63.dir/testFortranCompiler.f.o  -o cmTC_8ad63 -rdynamic 
-make[1]: Leaving directory '/home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp'
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec2735502554/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2735502554.dir\build.make CMakeFiles/cmTryCompileExec2735502554.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Chris\Documents\GitHub\FDTD\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec2735502554.dir/testFortranCompiler.f.obj
+C:\MinGW\bin\gfortran.exe    -c C:\Users\Chris\Documents\GitHub\FDTD\build\CMakeFiles\CMakeTmp\testFortranCompiler.f -o CMakeFiles\cmTryCompileExec2735502554.dir\testFortranCompiler.f.obj
+Linking Fortran executable cmTryCompileExec2735502554.exe
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2735502554.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec2735502554.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec2735502554.dir/objects.a @CMakeFiles\cmTryCompileExec2735502554.dir\objects1.rsp
+C:\MinGW\bin\gfortran.exe         -Wl,--whole-archive CMakeFiles\cmTryCompileExec2735502554.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec2735502554.exe -Wl,--out-implib,libcmTryCompileExec2735502554.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp'
 
 
 Detecting Fortran compiler ABI info compiled with the following output:
-Change Dir: /home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_1ca6e/fast"
-/usr/bin/make -f CMakeFiles/cmTC_1ca6e.dir/build.make CMakeFiles/cmTC_1ca6e.dir/build
-make[1]: Entering directory '/home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp'
-Building Fortran object CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o
-/usr/bin/f95    -c /usr/share/cmake-3.3/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o
-Linking Fortran executable cmTC_1ca6e
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ca6e.dir/link.txt --verbose=1
-/usr/bin/f95    -v   CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o  -o cmTC_1ca6e -rdynamic  
-Driving: /usr/bin/f95 -v CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o -o cmTC_1ca6e -rdynamic -l gfortran -l m -shared-libgcc
-Using built-in specs.
-COLLECT_GCC=/usr/bin/f95
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper
-Target: x86_64-unknown-linux-gnu
-Configured with: /build/gcc/src/gcc-5.2.0/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release --with-default-libstdcxx-abi=gcc4-compatible
-Thread model: posix
-gcc version 5.2.0 (GCC) 
-Reading specs from /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libgfortran.spec
-rename spec lib to liborig
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1ca6e' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1ca6e' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc75T46.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1ca6e /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../.. CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crtn.o
-make[1]: Leaving directory '/home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp'
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec3008888199/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3008888199.dir\build.make CMakeFiles/cmTryCompileExec3008888199.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Chris\Documents\GitHub\FDTD\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec3008888199.dir/CMakeFortranCompilerABI.F.obj
+C:\MinGW\bin\gfortran.exe    -c "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFortranCompilerABI.F" -o CMakeFiles\cmTryCompileExec3008888199.dir\CMakeFortranCompilerABI.F.obj
+Linking Fortran executable cmTryCompileExec3008888199.exe
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3008888199.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec3008888199.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec3008888199.dir/objects.a @CMakeFiles\cmTryCompileExec3008888199.dir\objects1.rsp
+C:\MinGW\bin\gfortran.exe       -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec3008888199.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3008888199.exe -Wl,--out-implib,libcmTryCompileExec3008888199.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Driving: C:\MinGW\bin\gfortran.exe -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec3008888199.dir/objects.a -Wl,--no-whole-archive -o cmTryCompileExec3008888199.exe -Wl,--out-implib,libcmTryCompileExec3008888199.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -l gfortran -shared-libgcc
+Using built-in specs.
+COLLECT_GCC=C:\MinGW\bin\gfortran.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.8.1/lto-wrapper.exe
+Target: mingw32
+Configured with: ../gcc-4.8.1/configure --prefix=/mingw --host=mingw32 --build=mingw32 --without-pic --enable-shared --enable-static --with-gnu-ld --enable-lto --enable-libssp --disable-multilib --enable-languages=c,c++,fortran,objc,obj-c++,ada --disable-sjlj-exceptions --with-dwarf2 --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gmp=/usr/src/pkg/gmp-5.1.2-1-mingw32-src/bld --with-mpc=/usr/src/pkg/mpc-1.0.1-1-mingw32-src/bld --with-mpfr= --with-system-zlib --with-gnu-as --enable-decimal-float=yes --enable-libgomp --enable-threads --with-libiconv-prefix=/mingw32 --with-libintl-prefix=/mingw --disable-bootstrap LDFLAGS=-s CFLAGS=-D_USE_32BIT_TIME_T
+Thread model: win32
+gcc version 4.8.1 (GCC) 
+Reading specs from c:/mingw/bin/../lib/gcc/mingw32/4.8.1/libgfortran.spec
+rename spec lib to liborig
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3008888199.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.8.1/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.8.1/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3008888199.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro'
+ c:/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTryCompileExec3008888199.exe c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec3008888199.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec3008888199.dll.a --major-image-version 0 --minor-image-version 0 -lgfortran -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lquadmath -lm -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp'
 
 
 Parsed Fortran implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld.exe|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_1ca6e/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_1ca6e.dir/build.make CMakeFiles/cmTC_1ca6e.dir/build]
-  ignore line: [make[1]: Entering directory '/home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building Fortran object CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o]
-  ignore line: [/usr/bin/f95    -c /usr/share/cmake-3.3/Modules/CMakeFortranCompilerABI.F -o CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o]
-  ignore line: [Linking Fortran executable cmTC_1ca6e]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ca6e.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/f95    -v   CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o  -o cmTC_1ca6e -rdynamic  ]
-  ignore line: [Driving: /usr/bin/f95 -v CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o -o cmTC_1ca6e -rdynamic -l gfortran -l m -shared-libgcc]
+  ignore line: [Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec3008888199/fast"]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec3008888199.dir\build.make CMakeFiles/cmTryCompileExec3008888199.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory 'C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp']
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Chris\Documents\GitHub\FDTD\build\CMakeFiles\CMakeTmp\CMakeFiles 1]
+  ignore line: [Building Fortran object CMakeFiles/cmTryCompileExec3008888199.dir/CMakeFortranCompilerABI.F.obj]
+  ignore line: [C:\MinGW\bin\gfortran.exe    -c "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeFortranCompilerABI.F" -o CMakeFiles\cmTryCompileExec3008888199.dir\CMakeFortranCompilerABI.F.obj]
+  ignore line: [Linking Fortran executable cmTryCompileExec3008888199.exe]
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec3008888199.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec3008888199.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec3008888199.dir/objects.a @CMakeFiles\cmTryCompileExec3008888199.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\gfortran.exe       -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec3008888199.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec3008888199.exe -Wl,--out-implib,libcmTryCompileExec3008888199.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Driving: C:\MinGW\bin\gfortran.exe -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec3008888199.dir/objects.a -Wl,--no-whole-archive -o cmTryCompileExec3008888199.exe -Wl,--out-implib,libcmTryCompileExec3008888199.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -l gfortran -shared-libgcc]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/f95]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc-5.2.0/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --enable-libmpx --with-system-zlib --with-isl --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-gnu-indirect-function --disable-multilib --disable-werror --enable-checking=release --with-default-libstdcxx-abi=gcc4-compatible]
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 5.2.0 (GCC) ]
-  ignore line: [Reading specs from /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/libgfortran.spec]
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\gfortran.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.8.1/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configured with: ../gcc-4.8.1/configure --prefix=/mingw --host=mingw32 --build=mingw32 --without-pic --enable-shared --enable-static --with-gnu-ld --enable-lto --enable-libssp --disable-multilib --enable-languages=c,c++,fortran,objc,obj-c++,ada --disable-sjlj-exceptions --with-dwarf2 --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --with-gmp=/usr/src/pkg/gmp-5.1.2-1-mingw32-src/bld --with-mpc=/usr/src/pkg/mpc-1.0.1-1-mingw32-src/bld --with-mpfr= --with-system-zlib --with-gnu-as --enable-decimal-float=yes --enable-libgomp --enable-threads --with-libiconv-prefix=/mingw32 --with-libintl-prefix=/mingw --disable-bootstrap LDFLAGS=-s CFLAGS=-D_USE_32BIT_TIME_T]
+  ignore line: [Thread model: win32]
+  ignore line: [gcc version 4.8.1 (GCC) ]
+  ignore line: [Reading specs from c:/mingw/bin/../lib/gcc/mingw32/4.8.1/libgfortran.spec]
   ignore line: [rename spec lib to liborig]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1ca6e' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_1ca6e' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccc75T46.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lquadmath -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_1ca6e /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../.. CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o -lgfortran -lm -lgcc_s -lgcc -lquadmath -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crtn.o]
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccc75T46.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lquadmath] ==> ignore
-    arg [-plugin-opt=-pass-through=-lm] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3008888199.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro']
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.8.1/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.8.1/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3008888199.exe' '-shared-libgcc' '-mtune=generic' '-march=pentiumpro']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTryCompileExec3008888199.exe c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../.. --whole-archive CMakeFiles\cmTryCompileExec3008888199.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec3008888199.dll.a --major-image-version 0 --minor-image-version 0 -lgfortran -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -lquadmath -lm -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o]
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/4.8.1/collect2.exe] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-u] ==> ignore
+    arg [___register_frame_info] ==> ignore
+    arg [-u] ==> ignore
+    arg [___deregister_frame_info] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_1ca6e] ==> ignore
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crti.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..]
-    arg [CMakeFiles/cmTC_1ca6e.dir/CMakeFortranCompilerABI.F.o] ==> ignore
+    arg [cmTryCompileExec3008888199.exe] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../crt2.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/crtbegin.o] ==> ignore
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.8.1]
+    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTryCompileExec3008888199.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTryCompileExec3008888199.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
     arg [-lgfortran] ==> lib [gfortran]
-    arg [-lm] ==> lib [m]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
     arg [-lquadmath] ==> lib [quadmath]
     arg [-lm] ==> lib [m]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lc] ==> lib [c]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib/crtn.o] ==> ignore
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/crtend.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0] ==> [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0/../../..] ==> [/usr/lib]
-  implicit libs: [gfortran;m;quadmath;m;c]
-  implicit dirs: [/usr/lib/gcc/x86_64-unknown-linux-gnu/5.2.0;/usr/lib;/lib]
-  implicit fwks: []
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.8.1] ==> [c:/MinGW/lib/gcc/mingw32/4.8.1]
+  collapse dir [c:/mingw/bin/../lib/gcc] ==> [c:/MinGW/lib/gcc]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib] ==> [c:/MinGW/mingw32/lib]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../..] ==> [c:/MinGW/lib]
+  implicit libs: [gfortran;mingw32;moldname;mingwex;msvcrt;quadmath;m;mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [c:/MinGW/lib/gcc/mingw32/4.8.1;c:/MinGW/lib/gcc;c:/MinGW/mingw32/lib;c:/MinGW/lib]
 
 
 Determining if the Fortran compiler supports Fortran 90 passed with the following output:
-Change Dir: /home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_fb93d/fast"
-/usr/bin/make -f CMakeFiles/cmTC_fb93d.dir/build.make CMakeFiles/cmTC_fb93d.dir/build
-make[1]: Entering directory '/home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp'
-Building Fortran object CMakeFiles/cmTC_fb93d.dir/testFortranCompilerF90.f90.o
-/usr/bin/f95    -c /home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp/testFortranCompilerF90.f90 -o CMakeFiles/cmTC_fb93d.dir/testFortranCompilerF90.f90.o
-Linking Fortran executable cmTC_fb93d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb93d.dir/link.txt --verbose=1
-/usr/bin/f95       CMakeFiles/cmTC_fb93d.dir/testFortranCompilerF90.f90.o  -o cmTC_fb93d -rdynamic 
-make[1]: Leaving directory '/home/cfadden/Github/FDTD/build/CMakeFiles/CMakeTmp'
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec1255481837/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1255481837.dir\build.make CMakeFiles/cmTryCompileExec1255481837.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Chris\Documents\GitHub\FDTD\build\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building Fortran object CMakeFiles/cmTryCompileExec1255481837.dir/testFortranCompilerF90.f90.obj
+C:\MinGW\bin\gfortran.exe    -c C:\Users\Chris\Documents\GitHub\FDTD\build\CMakeFiles\CMakeTmp\testFortranCompilerF90.f90 -o CMakeFiles\cmTryCompileExec1255481837.dir\testFortranCompilerF90.f90.obj
+Linking Fortran executable cmTryCompileExec1255481837.exe
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1255481837.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1255481837.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1255481837.dir/objects.a @CMakeFiles\cmTryCompileExec1255481837.dir\objects1.rsp
+C:\MinGW\bin\gfortran.exe         -Wl,--whole-archive CMakeFiles\cmTryCompileExec1255481837.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1255481837.exe -Wl,--out-implib,libcmTryCompileExec1255481837.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
+mingw32-make.exe[1]: Leaving directory 'C:/Users/Chris/Documents/GitHub/FDTD/build/CMakeFiles/CMakeTmp'
 
 

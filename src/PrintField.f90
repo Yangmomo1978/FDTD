@@ -26,7 +26,8 @@ MODULE PrintField
       
       DO i = 1, SizeX
         DO j = 1, SizeY
-          WRITE(UNIT=1, FMT="(F8.6)",ADVANCE="NO") Ez(i,j);
+          WRITE(UNIT=1, FMT="(F12.6)",ADVANCE="NO") Ez(i,j);
+          WRITE(UNIT=1, FMT="(A2)",ADVANCE="NO") ", ";
         END DO
           WRITE(UNIT=1,FMT=*) 
       END DO

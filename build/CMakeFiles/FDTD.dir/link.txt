@@ -1,1 +1,3 @@
-/usr/bin/f95    -g -Wall -fbounds-check CMakeFiles/FDTD.dir/main.f90.o CMakeFiles/FDTD.dir/src/FDTD_Constants.f90.o CMakeFiles/FDTD.dir/src/FDTD.f90.o CMakeFiles/FDTD.dir/src/Grid.f90.o CMakeFiles/FDTD.dir/src/PrintField.f90.o CMakeFiles/FDTD.dir/src/TFSF.f90.o CMakeFiles/FDTD.dir/src/CPML.f90.o  -o FDTD -rdynamic 
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\FDTD.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\FDTD.dir/objects.a @CMakeFiles\FDTD.dir\objects1.rsp
+C:\MinGW\bin\gfortran.exe  -g -Wall -fbounds-check    -Wl,--whole-archive CMakeFiles\FDTD.dir/objects.a -Wl,--no-whole-archive  -o FDTD.exe -Wl,--out-implib,libFDTD.dll.a -Wl,--major-image-version,0,--minor-image-version,0  
