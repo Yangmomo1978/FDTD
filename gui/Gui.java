@@ -68,10 +68,10 @@ public class Gui extends JFrame implements ActionListener{
     row++;
     c.ipady = 0;
     
-    SizeXfield = new JTextField("200     ");
+    SizeXfield = new JTextField("1024     ");
     placeField("Size X :    ", SizeXfield);
     
-    SizeYfield = new JTextField("200     ");
+    SizeYfield = new JTextField("1024     ");
     placeField("Size Y :    ", SizeYfield);
       
     maxTimeField = new JTextField("100         ");  
@@ -230,7 +230,7 @@ public class Gui extends JFrame implements ActionListener{
      
     try{
 
-      FileWriter writer = new FileWriter("../grid.txt");
+      FileWriter writer = new FileWriter("grid.txt");
       writer.write(SizeX);
       writer.write("\r\n");
       writer.write(SizeY);

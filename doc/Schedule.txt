@@ -2,6 +2,8 @@ Schedule for FDTD
 
 I believe CPML is finished
 
+Use FORD for documentation
+
 TF/SF
   box = done
   Hamming Window = need to do

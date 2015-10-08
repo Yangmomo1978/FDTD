@@ -1,0 +1,13 @@
+#! /bin/bash
+set -e
+make -C ./build/
+clear
+java -cp ./gui/ GuiMain
+./build/FDTD
+
+matlab -nosplash -nodesktop -r "run Plot"
+
+cvlc FDTD_Movie.avi
+
+rm grid.txt
+

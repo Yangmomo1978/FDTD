@@ -1,14 +1,13 @@
   
   set(0, 'defaultfigurevisible','off')
   
-%  fp = fopen('output/Limits.txt','r');
-%  limits = fscanf(fp,'%f');  
-  limits = [-30, 30];
+  fp = fopen('./output/limits.txt','r');
+  limits = fscanf(fp,'%f');  
   i = 1;
  for t = 100:199   
     %Make ColorMap
     num = num2str(t);
-    file = strcat('C:\Users\Chris\Documents\GitHub\FDTD\output\',num,'.csv');
+    file = strcat('./output/',num,'.csv');
     M = csvread(file);
     M = M(:,1:end-1);
     h = surf(M,'EdgeColor','None','facecolor','interp'); 
@@ -21,6 +20,6 @@
    i = i + 1;
  end
  
- movie2avi(mov,'WaveMovie.avi');
+ movie2avi(mov,'FDTD_Movie.avi');
 
-%exit;
+exit;
